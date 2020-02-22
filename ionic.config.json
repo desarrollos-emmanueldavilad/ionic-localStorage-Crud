@@ -1,0 +1,7 @@
+{
+  "name": "storageCrud",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
