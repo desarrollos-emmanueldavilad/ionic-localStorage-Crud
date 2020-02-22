@@ -4,6 +4,10 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
+  {
+    path: 'ionic-storage',
+    loadChildren: () => import('./ionic-storage/ionic-storage.module').then( m => m.IonicStoragePageModule)
+  },
 ];
 
 @NgModule({
