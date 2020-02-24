@@ -8,6 +8,10 @@ const routes: Routes = [
     path: 'ionic-storage',
     loadChildren: () => import('./ionic-storage/ionic-storage.module').then( m => m.IonicStoragePageModule)
   },
+  {
+    path: 'storage',
+    loadChildren: () => import('./storage/storage.module').then( m => m.StoragePageModule)
+  },
 ];
 
 @NgModule({
